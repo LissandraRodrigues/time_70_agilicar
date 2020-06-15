@@ -1,0 +1,130 @@
+:root {
+  --background-input: #f2f2f5;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#body-home {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #FFF;
+}
+
+#pagina-home {
+    width: 30%;
+}
+
+/* @media screen and (max-width: 768px){ */
+    
+    #pagina-home {
+        width: 100%;
+    }
+    
+    .content{
+        width: 80%;
+        margin: auto;
+        position: relative;
+    }
+        
+    fieldset{
+        border: none;
+        padding: 0px;
+    }
+    
+    fieldset a{
+        color: #fe8b53;
+        
+    }
+    input{
+        background-color: var(--background-input);
+        margin-top: 10px;
+        padding: 6px;
+        border: 1px solid #80808036;
+    }
+    
+    .field{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .field label{
+        font-size: 15px;
+    }
+    
+    #pagina-cadastro button {
+        border-radius: 8px;
+        border: #FE8B53;
+        width: 100%;
+        background-color: #FE8B53;
+        font-family: 'Roboto Regular';
+        font-size: 18px;
+        padding: 8px;
+        margin: 30px 0px; 
+    }
+    
+    #pagina-cadastro{
+        font-family: roboto;
+    }
+    
+    #pagina-cadastro button a{
+        color: #FFF;
+        text-decoration: none;
+    }
+    
+    #pagina-cadastro form{
+        margin: 50px 0px;
+    }
+    
+    #pagina-cadastro form p{
+        color: grey;
+        
+    }
+    
+    #pagina-cadastro form h1{
+        font-size: 20px ;
+        font-weight: 900;
+    }
+    
+    
+    
+    #pagina-cadastro header {
+        border-bottom:1px solid #80808036;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #pagina-cadastro header h1 {
+        margin: 0px 0px 0px 10px;
+        font-size: 25px;
+    }
+    
+    #pagina-cadastro header img{
+        display: none;
+    }
+    
+    #pagina-cadastro header .content{
+        display: flex;
+        align-items: center;
+    }
+    
+    #pagina-cadastro header i{
+        font-size: xx-large;
+        color: #FE8B53;
+        
+    }
+    
+    .form-check-label {
+        color: grey;
+    }
+/* } */
+
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+    
+}

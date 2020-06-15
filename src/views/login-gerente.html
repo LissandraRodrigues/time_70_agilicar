@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang = "pt_br">
+
+    <head>
+
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>
+        Login - Gerente
+        </title>
+        
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+        
+        <link href = "https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel = "stylesheet">
+        <link rel = "stylesheet" href = "/styles/main.css">
+        <link rel = "shortcut icon" href = "https://image.flaticon.com/icons/png/512/411/411712.png" type = "image/x-icon" sizes = "16x16 24x24 32x32 64x64">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+        <link href = "https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel = "stylesheet">
+        
+        <link rel = "stylesheet" href = "styles/estilos.css">
+
+    </head>
+
+    <body>
+
+        <div id = "pagina-cadastro">
+
+            <header>
+
+                <div class="content">
+                    <img src = "/assets/truck.png" alt = "Logomarca" height = "48px">
+                    <a href = "/">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <h1>
+                        Acesso
+                    </h1>
+                </div>
+
+            </header>
+        
+            <div class="content" >
+                <form action = "/salva-login-gerente">
+                    <h1>
+                        Gerente
+                    </h1>
+                    <p>Acesse com seus dados</p>
+                    <fieldset>
+                        <div class = "field-group">
+                            <!-- CPF -->
+                            <div class = "field">
+                                <label for = "cpf">
+                                    CPF
+                                </label>
+                                <input type = "text" name = "cpf" class="form-control form-control-lg bg-light" required = "required">
+                            </div>
+                            <!-- Senha -->
+                            <div class = "field">
+                                <label for = "senha">
+                                    Senha
+                                </label>
+                                <input type = "password" name = "senha" class="form-control form-control-lg bg-light" required = "required">
+                            </div>
+                        </div>
+                        <div class="form-check">   
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                                Salvar minha senha
+                            </label> 
+                        </div>
+                        <a href = "/">
+                            Esqueceu sua senha?
+                        </a>
+                    </fieldset>
+
+                        <button type = "submit">
+                            {# <a href = "acesso-gerente" class = "entrar"> #}
+                            
+                                Entrar
+
+                             {# </a> #}
+
+                        </button>                   
+                    
+                    <a href = "cadastro-gerente">
+                        <br>
+                        É novo por aqui? Crie sua conta agora mesmo!
+                    </a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

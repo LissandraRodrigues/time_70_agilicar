@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang = "pt_br">
+
+    <head>
+
+        <meta charset = "UTF-8">
+
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        
+        <title>
+        
+            Nova Autorização
+        
+        </title>
+        
+        <!-- CSS only -->
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity = "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin = "anonymous">
+        
+        <!-- JS, Popper.js, and jQuery -->
+        <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous">
+        </script>
+        
+        <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity = "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin = "anonymous">
+        </script>
+        
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity = "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin = "anonymous">
+        </script>
+        
+        <link href = "https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel = "stylesheet">
+        
+        <link rel = "stylesheet" href = "/styles/main.css">
+        
+        <link rel = "shortcut icon" href = "https://image.flaticon.com/icons/png/512/411/411712.png" type = "image/x-icon" sizes = "16x16 24x24 32x32 64x64">
+        
+        <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity = "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin = "anonymous">
+        
+        <link href = "https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel = "stylesheet">
+        
+        <link rel = "stylesheet" href = "styles/estilos.css">
+
+    </head>
+
+    <body>
+
+        <div id = "pagina-cadastro">
+
+            <header>
+
+                <div class = "content">
+
+                    <img src = "/assets/truck.png" alt = "Logomarca" height = "48px">
+
+                    <a href = "acesso-caminhoneiro">
+
+                        <i class = "fas fa-chevron-left"></i>
+
+                    </a>
+
+                    <h1>
+
+                        Nova autorização
+
+                    </h1>
+
+                </div>
+
+            </header>
+
+            <div class = "content">
+
+                <form action = "/salva-cadastro-autorizacao" method = "POST" class = "p-4 bg-light">
+                    
+                    <label class="mt-3"> Empresas </label>
+
+                    <div class = "form-group">
+
+                        <input type = "text" class="form-control form-control-lg" name = "empresa_entregadora" placeholder = "Entregadora">
+                    
+                    </div>
+
+                    <div class = "form-group">
+
+                        <input type = "text" class = "form-control form-control-lg" name = "empresa_receptora" placeholder = "Receptora">
+                    
+                    </div>
+                    
+                    <label class = "mt-3"> Local </label>
+
+                    <div class = "form-group">
+
+                        <input type = "text" class = "form-control form-control-lg" name = "local_saida" placeholder = "Saída">
+
+                    </div>
+
+                    <div class = "form-group">
+
+                        <input type = "text" class = "form-control form-control-lg" name = "local_destino" placeholder = "Destino">
+
+                    </div>
+
+                    <label class = "mt-3"> Carga </label>
+
+                    <div class = "form-group">
+
+                        <input type="text" class = "form-control form-control-lg" name = "tipo_carga" placeholder = "Tipo de Carga">
+
+                    </div>
+
+                    <div class = "form-group">
+
+                        <input type = "text" class = "form-control form-control-lg" name = "peso_carga" placeholder = "Peso da Carga">
+
+                    </div>
+
+                    <label class = "mt-3"> Dia </label>
+
+                    <div class = "form-group">
+
+                        <input type = "date" class = "form-control form-control-lg" name = "data" placeholder = "Data">
+
+                    </div>
+
+                    <div class = "form-group">
+
+                        <input type = "time" class="form-control form-control-lg" name = "horario" placeholder = "Horário">
+
+                    </div>
+
+                    <label class = "mt-3"> CPF </label>
+
+                    <div class = "form-group">
+
+                        <input type = "text" class="form-control form-control-lg" name = "cpf" placeholder = "Confirmação CPF">
+
+                    </div>
+
+                    <button type = "submit" type = "button" class = "btn btn-lg shadow-sm py-2 emitir-nota" style = "color: #ffffff;">
+
+                        <span> Enviar </span>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

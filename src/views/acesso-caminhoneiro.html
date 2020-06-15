@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang = "pt_br">
+
+    <head>
+
+        <meta charset = "UTF-8">
+
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <title>
+
+            Meu acesso - Motorista
+        
+        </title>
+        
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin = "anonymous">
+        
+        <!-- JS, Popper.js, and jQuery -->
+        <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous">
+        </script>
+        
+        <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity = "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin = "anonymous">
+        </script>
+        
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity = "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin = "anonymous">
+        </script>
+        
+        <link href = "https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel = "stylesheet">
+        
+        <link rel = "stylesheet" href = "/styles/main.css">
+        
+        <link rel = "shortcut icon" href = "https://image.flaticon.com/icons/png/512/411/411712.png" type = "image/x-icon" sizes = "16x16 24x24 32x32 64x64">
+        
+        <link rel = "stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin = "anonymous">
+        
+        <link href = "https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel = "stylesheet">
+        
+        <link rel = "stylesheet" href = "styles/estilos.css">
+        
+        <script type = "text/javascript" src="js/aparecelista.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id = "pagina-cadastro">
+
+            <header>
+
+                <div class = "content" >
+
+                    <img src = "/assets/truck.png" alt = "Logomarca" height = "48px">
+
+                    <a href = "login-caminhoneiro">
+
+                        <i class = "fas fa-chevron-left"></i>
+
+                    </a>
+
+                    <h1>
+
+                        Meu acesso 
+
+                    </h1>
+
+                </div>
+
+            </header>
+
+            <div class = "content">
+
+                <div class = "mt-4 perfil-caminhoneiro">
+
+                    <div class = "mt-3 text-center">
+
+                        <h2 class = "nome-caminhoneiro"> André Castro </h2>
+
+                        <h4 class = "veiculo-caminhoneiro"> Veículo - KRR6600 </h4>
+
+                    </div>
+
+                </div>
+                
+                {% for place in places %}
+
+                    <form class = "p-4 bg-light">
+
+                        <fieldset>
+
+                            <div>
+
+                                <legend>
+
+                                    <h1>
+
+                                        Nota fiscal emitida
+
+                                    </h1>
+
+                                </legend>
+
+                                <h6>
+
+                                    Peso - Carga: {{ place.peso_carga }}
+
+                                </h6>
+
+                                <h6>
+
+                                    Peso - Veículo: {{ place.peso_veiculo }}
+
+                                </h6>
+
+                                <h6>
+
+                                    Horário - Emissão: {{ place.horario_emissao }}
+
+                                </h6>
+
+                            </div>
+
+                        </fieldset>
+
+                    </form>
+
+                {% endfor %}
+
+                <a href = "cadastro-autorizacao">
+
+                    <button class = "nova-autorizacao">
+
+                        Cadastre nova autorização de carregamento
+
+                    </button>
+                </a>
+            
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
